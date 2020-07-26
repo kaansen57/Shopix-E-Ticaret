@@ -1,0 +1,39 @@
+﻿@model IEnumerable<eCommerce_Core_Model.Entity.Basket>
+
+@{ 
+    ViewBag.Title = "Sepetim";
+}
+
+<h3> <i class="fas fa-shopping-basket" style="color:#1b1b1b"></i> Sepetim </h3>
+<br />
+<table class="table">
+    <tr>
+        <th>Marka</th>
+        <th>Ürün Adı</th>
+        <th>Adet</th>
+        <th>Sil/Güncelle</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Product.Brand)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Product.Model)
+        </td>
+
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantity)
+        </td>
+      
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }, new { @class="btn btn-warning"}) 
+           
+            @Html.ActionLink("Sil", "Delete", new { id=item.ID } , new { @class="btn btn-danger"})
+        </td>
+    </tr>
+}
+
+</table>

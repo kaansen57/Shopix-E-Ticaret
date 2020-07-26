@@ -1,0 +1,11 @@
+﻿@model IEnumerable<eCommerce_Core_Model.Entity.Category>
+
+
+@{
+    foreach (var item in Model)
+    {
+        <li class="item ">
+            <a class="list-group-item-heading" href="/Kategori/@item.Name.Replace(" ","-")/@item.ID">@item.Name</a>
+        </li>
+    }
+}

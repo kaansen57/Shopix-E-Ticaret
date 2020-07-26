@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Admin";
+    var user = Session["AdminLoginUser"] as eCommerce_Core_Model.Entity.User;
+}
+
+<style>
+    i{
+        color:black;
+    }
+</style>
+<div class="container">
+    <div class="alert alert-info text-center" style="margin-top:3rem;"> <h2>Sayın @user.Name.ToUpper() @user.LastName.ToUpper() Admin Paneline Hoşgeldiniz </h2>  </div>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <i class="fas fa-user"></i>  <a style="color:black" href="/Admin/Users">Üye Yönetimi</a>
+        </li>
+        <li class="list-group-item">
+            <i class="fas fa-barcode"></i>  <a style="color:black" href="/Admin/Products">Ürün Yönetimi</a>
+        </li>
+        <li class="list-group-item" i>
+            <i class="fas fa-ellipsis-h"> </i> <a style="color:black" href="/Admin/Categories">Kategori Yönetimi</a>
+        </li>
+    </ul>
+</div>

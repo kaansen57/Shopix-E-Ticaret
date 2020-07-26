@@ -1,0 +1,49 @@
+﻿@model List<eCommerce_Core_Model.Entity.Product>
+
+@{
+    ViewBag.Title = "Kategori";
+   var category = (eCommerce_Core_Model.Entity.Category) ViewBag.category;
+}
+
+<style>
+    .slider-boyut {
+        height: 400px;
+    }
+
+    .thumbnail-golge {
+        webkit-box-shadow: 6px 7px 18px 2px rgba(0,0,0,0.5);
+        -moz-box-shadow: 6px 7px 18px 2px rgba(0,0,0,0.5);
+        box-shadow: 6px 7px 18px 2px rgba(0,0,0,0.5);
+        border-radius: 20px;
+        padding-top: 10px;
+    }
+
+    .yazi-gizle {
+        overflow: hidden; /* taşacak kısımları gizle. */
+        white-space: nowrap; /* alt satırı gösterme, alt satıra inme. */
+        text-overflow: ellipsis; /* uzunsa sonuna üç nokta koy. */
+    }
+</style>
+
+<h3> @category.Name Kategorisinde ki Ürünler </h3>
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <a href="/Urun/@item.Model.Replace(" " ,"-")/@item.ID">
+            <div class="col-sm-6 col-md-3" style="border-radius:10px;">
+                <div class="thumbnail thumbnail-golge">
+                    <img class="img-rounded" style="border-radius:20px;" src="@item.ImageUrl" alt="@item.Model">
+                    <div class="caption text-center">
+                        <h4 style="font-family: 'Patrick Hand SC', cursive;font-size:25px;color:#1b1b1b;" class="yazi-gizle"> @item.Brand @item.Model</h4>
+                        <h3 style="font-weight:800; font-family: 'Patrick Hand SC', cursive;font-size:30px;color:#E25B45;">@item.Price.ToString("##,## ₺")</h3>
+                        <div>
+                            <a href="/Urun/@item.Model.Replace(" " ,"-")/@item.ID" class="btn" style="background-color:#141414;color:white;" role="button"> <i class="fas fa-eye"></i> İncele</a>
+                            <a href="#" class="btn" style="background-color:#F29E62;color:white;" role="button"> <i class="fas fa-shopping-cart"></i> Sepete At</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+    }
+</div>

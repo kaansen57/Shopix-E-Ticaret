@@ -1,0 +1,47 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Admin Paneli Giriş</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <style>
+       .col-centered{
+           float:none;
+           margin:0 auto;
+       }
+      body{
+           background-image:linear-gradient(to right,#86e3ce,#ccabd8);
+       }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <div class="row">
+            <div class="col-md-5 col-centered text-center">
+                <div class="panel panel-info  ">
+                    <div class="panel-heading ">Admin Paneli Giriş</div>
+                    <div class="panel-body" >
+                        <form method="post" class="form-group ">
+                            @Html.Label("Email")
+                            @Html.TextBox("Email", "", new { @class = "form-control col-centered" })
+                            <br />
+                            @Html.Label("Şifre")
+                            @Html.Password("Password", "", new { @class = "form-control col-centered" })
+                            <br />
+                            <button class="btn btn-info" type="submit">Giriş Yap</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

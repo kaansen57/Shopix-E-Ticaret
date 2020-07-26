@@ -1,0 +1,10 @@
+c:\users\kaans\documents\visual studio 2015\Projects\eCommerce\eCommerce-Core-Model\bin\Debug\eCommerce-Core-Model.dll.config
+c:\users\kaans\documents\visual studio 2015\Projects\eCommerce\eCommerce-Core-Model\bin\Debug\eCommerce-Core-Model.dll
+c:\users\kaans\documents\visual studio 2015\Projects\eCommerce\eCommerce-Core-Model\bin\Debug\eCommerce-Core-Model.pdb
+c:\users\kaans\documents\visual studio 2015\Projects\eCommerce\eCommerce-Core-Model\bin\Debug\EntityFramework.dll
+c:\users\kaans\documents\visual studio 2015\Projects\eCommerce\eCommerce-Core-Model\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\kaans\documents\visual studio 2015\Projects\eCommerce\eCommerce-Core-Model\bin\Debug\EntityFramework.xml
+c:\users\kaans\documents\visual studio 2015\Projects\eCommerce\eCommerce-Core-Model\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\kaans\documents\visual studio 2015\Projects\eCommerce\eCommerce-Core-Model\obj\Debug\eCommerce-Core-Model.csprojResolveAssemblyReference.cache
+c:\users\kaans\documents\visual studio 2015\Projects\eCommerce\eCommerce-Core-Model\obj\Debug\eCommerce-Core-Model.dll
+c:\users\kaans\documents\visual studio 2015\Projects\eCommerce\eCommerce-Core-Model\obj\Debug\eCommerce-Core-Model.pdb
